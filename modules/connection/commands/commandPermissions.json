@@ -24,6 +24,8 @@
  "bans": 3,
  "tp": 2,
  "tpall": 3,
+ "rtp": 3,
+ "rtp2": 3,
  "sayraw": 3,
  "stealth": 2,
  "broadcast": 2,
@@ -34,5 +36,7 @@
  "passtest": 0,
  "ownerlogin": 0,
  "home": 0,
- "save2": 3
+ "save2": 3,
+ "whar": 3,
+ "whatid": 0
 }

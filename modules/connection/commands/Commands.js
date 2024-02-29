@@ -487,7 +487,44 @@ class Commands {
     server.manager.updateDatabase();
     server.manager.updateDatabase();
     server.manager.updateDatabase();
+    server.manager.updateDatabase();
+    server.manager.updateDatabase();
+    server.manager.updateDatabase();
+    server.manager.updateDatabase();
+    server.manager.updateDatabase();
+    server.manager.updateDatabase();
+    server.manager.updateDatabase();
+    server.manager.updateDatabase();
+    server.manager.updateDatabase();
+    server.manager.updateDatabase();
+    server.manager.updateDatabase();
     server.players.sendToAll(`DEVWorld Saved!`)
+  }
+  whar() {
+    server.players.sendToAll(`Whar`)
+  }
+  rtp2() {
+    let target
+    target = this.client
+    let x
+    let y
+    x = Math.floor(Math.random() * -10001)
+    y = Math.floor(Math.random() * -10001)
+    target.teleport(x, y)
+  }
+  rtp() {
+    let target
+    target = this.client
+    let x
+    let y
+    x = Math.floor(Math.random() * 10001)
+    y = Math.floor(Math.random() * 10001)
+    target.teleport(x, y)
+  }
+  whatid() {
+    let target
+    target = this.client
+    this.client.send(`Your ID is ${target.id}`)
   }
 }
 
