@@ -32,5 +32,7 @@
  "save": 3,
  "logout": 0,
  "passtest": 0,
- "ownerlogin": 0
+ "ownerlogin": 0,
+ "home": 0,
+ "save2": 3
 }

@@ -54,7 +54,7 @@ var chunkWrites = {}; // pending chunk updates
 var pendingUnload = {};
 
 var fileHandles = {}; // "worldName;clusterX;clusterY"
-var maxFileHandles = 75000;
+var maxFileHandles = 7500000;
 
 function chunk_is_protected(worldName, x, y) {
 	if(!loadedProts[worldName]) throw "World " + worldName + " is not initialized";

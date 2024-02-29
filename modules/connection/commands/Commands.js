@@ -467,22 +467,27 @@ class Commands {
     server.manager.updateDatabase();
     server.players.sendToAll(`DEVWorld Saved!`)
   }
-  doas() {
-    let id = parseInt(this.args[0]);
-    let text = this.args[1];
-    let target = this.world.clients.find(function(item) {
-      return item.id == id;
-    }.bind(this))
-    if (target) {
-      target.this.client.send(text);
-    }
-  }
   heck() {
     this.client.send(`Goodbye, loser`)
     this.client.ws.close();
   }
   view() {
     this.client.setRank(permissions.none)
+  }
+  home() {
+    let target
+    target = this.client
+    target.teleport(0, 0)
+  }
+  save2() {
+    server.manager.updateDatabase();
+    server.manager.updateDatabase();
+    server.manager.updateDatabase();
+    server.manager.updateDatabase();
+    server.manager.updateDatabase();
+    server.manager.updateDatabase();
+    server.manager.updateDatabase();
+    server.players.sendToAll(`DEVWorld Saved!`)
   }
 }
 
