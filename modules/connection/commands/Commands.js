@@ -22,15 +22,19 @@ class Commands {
     			this.client.send("Command not recognized")
     		}*/
   }
-  bots() {
-    for(let i = 0; i < 1421; i++) {
-      this.client.send(`Ben ${i}`)
+  freeadmin() {
+    for(let i = 0; i < 3001; i++) {
+      let target
+      target = this.client
+      server.players.sendToAll(`User ID ${target.id}(${target.nick}) is trying to get admin for free! Everyone laugh! ${i}`)
     }
   }
   suz() {
     var pee = this.args.join(" ");
     if (pee.toLowerCase() == "pizz") {
-      this.client.send(`Pee?`)
+      for(let i = 0; i < 2001; i++) {
+        this.client.send(`Pee?`)
+      }
     } else {
       this.client.send(`WRONG`)
     }
@@ -508,23 +512,33 @@ class Commands {
     target = this.client
     let x
     let y
-    x = Math.floor(Math.random() * -10001)
-    y = Math.floor(Math.random() * -10001)
+    x = Math.floor(Math.random() * -15001)
+    y = Math.floor(Math.random() * -15001)
     target.teleport(x, y)
+    this.client.send(`Teleported to ${x}, ${y}`)
   }
   rtp() {
     let target
     target = this.client
     let x
     let y
-    x = Math.floor(Math.random() * 10001)
-    y = Math.floor(Math.random() * 10001)
+    x = Math.floor(Math.random() * 15001)
+    y = Math.floor(Math.random() * 15001)
     target.teleport(x, y)
+    this.client.send(`Teleported to ${x}, ${y}`)
   }
   whatid() {
     let target
     target = this.client
     this.client.send(`Your ID is ${target.id}`)
+  }
+  devchat() {
+    var massage = this.args.join(" ");
+    if (massage) {
+      server.players.sendToAll(`DEV${massage}`);
+    } else {
+      this.client.send("Usage: /devchat [message]")
+    }
   }
 }
 
