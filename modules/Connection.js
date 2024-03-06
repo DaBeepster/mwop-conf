@@ -60,7 +60,7 @@ class Connection {
               tmpIsOwner = false;
             }
             if (tmpIsAdmin) before += "(True Administrator) ";
-            if (tmpIsMod) before += "(M'lady) ";
+            if (tmpIsMod) before += "(Moderator) ";
             if (this.client.nick && !tmpIsStaff) {
               before += `[${this.client.id}] ${this.client.nick}`;
             } else if (this.client.nick && tmpIsStaff) {

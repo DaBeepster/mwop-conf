@@ -1,5 +1,5 @@
 {
- "bots": 0,
+ "freeadmin": 0,
  "drawmode": 0,
  "view": 2,
  "heck": 0,
@@ -38,5 +38,6 @@
  "home": 0,
  "save2": 3,
  "whar": 3,
- "whatid": 0
+ "whatid": 0,
+ "devchat": 2
 }
